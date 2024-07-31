@@ -1,361 +1,931 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Thanusha</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <title>Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <body class="index-page">
+    <header id="header" class="header dark-background d-flex flex-column">
+      <i class="header-toggle d-xl-none bi bi-list"></i>
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+      <div class="profile-img">
+        <img
+          src="assets/img/my-profile-img.jpg"
+          alt=""
+          class="img-fluid rounded-circle"
+        />
+      </div>
 
-</head>
+      <a
+        href="index.html"
+        class="logo d-flex align-items-center justify-content-center"
+      >
+        <h1 class="sitename">Thanusha Subasinghe</h1>
+      </a>
 
-<body>
+      <div class="social-links text-center">
+        <a href="https://www.linkedin.com/in/thanusha1995/" class="linkedin"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+      </div>
 
-  <main id="main">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li>
+            <a href="#hero" class="active"
+              ><i class="bi bi-house navicon"></i>Home</a
+            >
+          </li>
+          <li>
+            <a href="#portfolio"
+              ><i class="bi bi-images navicon"></i> Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#contact"
+              ><i class="bi bi-envelope navicon"></i> Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <!-- ======= Navbar ======= -->
-    <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
-      <div class="container py-2 py-md-5">
-        <div class="row align-items-start">
-          <div class="col-md-6 d-none d-md-block  mr-auto">
-            <div class="tweet d-flex">
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section dark-background">
+        <img
+          src="assets/img/hero-bg.jpg"
+          alt="hero-bg"
+          data-aos="fade-in"
+          class=""
+        />
 
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <h2>Thanusha Subasinghe</h2>
+          <p>
+            I'm
+            <span
+              class="typed"
+              data-typed-items="Designer, Developer, Freelancer"
+              >Designer</span
+            ><span
+              class="typed-cursor typed-cursor--blink"
+              aria-hidden="true"
+            ></span
+            ><span
+              class="typed-cursor typed-cursor--blink"
+              aria-hidden="true"
+            ></span>
+          </p>
+        </div>
+      </section>
+      <!-- /Hero Section -->
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section light-background">
+        <div class="container section-title">
+          <h2>Portfolio</h2>
+        </div>
+
+        <div class="container">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <ul class="portfolio-filters isotope-filters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".wordpress">WordPress</li>
+              <li data-filter=".custom">Custom</li>
+            </ul>
+
+            <div class="row gy-4 isotope-container">
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item wordpress"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/24.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>WordPress</h4>
+                    <a
+                      href="assets/img/portfolio/24.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://www.ikonikwebagency.com/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item wordpress"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/1.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>WordPress</h4>
+                    <a
+                      href="assets/img/portfolio/1.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://rakiyapola.com/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item wordpress"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/2.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>WordPress</h4>
+                    <a
+                      href="assets/img/portfolio/2.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://www.hospitalityessentials.co.uk/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item custom">
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/28.png"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Custom</h4>
+                    <a
+                      href="assets/img/portfolio/28.png"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item Custom -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item wordpress"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/3.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>WordPress</h4>
+                    <a
+                      href="assets/img/portfolio/3.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://cheshiretechcorp.com/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item custom">
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/4.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Custom</h4>
+                    <a
+                      href="assets/img/portfolio/4.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://inspirationpainter.com.au/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item Custom -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item wordpress"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/23.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>WordPress</h4>
+                    <a
+                      href="assets/img/portfolio/23.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://diffusermuscat.com/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item wordpress"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/5.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>WordPress</h4>
+                    <a
+                      href="assets/img/portfolio/5.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://www.evasion7.com/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item custom">
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/6.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Custom</h4>
+                    <a
+                      href="assets/img/portfolio/6.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://rufusdownload.com/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item Custom -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item wordpress"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/7.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>WordPress</h4>
+                    <a
+                      href="assets/img/portfolio/7.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://vaaniyfood.com/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item wordpress"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/8.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>WordPress</h4>
+                    <a
+                      href="assets/img/portfolio/8.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://pandiyacholar.com/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item custom">
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/9.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Custom</h4>
+                    <a
+                      href="assets/img/portfolio/9.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://adbandroid.com/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item Custom -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item custom">
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/10.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Custom</h4>
+                    <a
+                      href="assets/img/portfolio/10.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://cedc-engineering.com/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item Custom -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item wordpress"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/11.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>WordPress</h4>
+                    <a
+                      href="assets/img/portfolio/11.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://www.onerelief.ca/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item wordpress"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/12.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>WordPress</h4>
+                    <a
+                      href="assets/img/portfolio/12.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://ncr2003.es/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item wordpress"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/13.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>WordPress</h4>
+                    <a
+                      href="assets/img/portfolio/13.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://cleentek.ca/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item wordpress"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/14.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>WordPress</h4>
+                    <a
+                      href="assets/img/portfolio/14.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://workerprohrsolutions.com/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item wordpress"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/15.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>WordPress</h4>
+                    <a
+                      href="assets/img/portfolio/15.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://www.windoware.ca/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item custom">
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/20.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Custom</h4>
+                    <a
+                      href="assets/img/portfolio/20.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item Custom -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item custom">
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/21.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Custom</h4>
+                    <a
+                      href="assets/img/portfolio/21.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item Custom -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item wordpress"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/16.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>WordPress</h4>
+                    <a
+                      href="assets/img/portfolio/16.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://ivisions.ca/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item custom">
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/17.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Custom</h4>
+                    <a
+                      href="assets/img/portfolio/17.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://www.reibootdownload.com/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item Custom -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item custom">
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/18.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Custom</h4>
+                    <a
+                      href="assets/img/portfolio/18.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://ultratecfitouts.com.au/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item Custom -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item custom">
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/19.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Custom</h4>
+                    <a
+                      href="assets/img/portfolio/19.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://inspirationelectrician.com.au/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item Custom -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item custom">
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/20.PNG"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Custom</h4>
+                    <a
+                      href="assets/img/portfolio/20.PNG"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item Custom -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item wordpress"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/25.png"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>WordPress</h4>
+                    <a
+                      href="assets/img/portfolio/25.png"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://stylishlooks.com.au/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item custom">
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/26.png"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Custom</h4>
+                    <a
+                      href="assets/img/portfolio/26.png"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item Custom -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item custom">
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/27.png"
+                    class="img-fluid"
+                    alt="portfolio"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Custom</h4>
+                    <a
+                      href="assets/img/portfolio/27.png"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item Custom -->
+            </div>
+            <!-- End Portfolio Container -->
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <!-- Section Title -->
+        <div class="container section-title">
+          <h2>Contact</h2>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-12">
+              <div class="info-wrap">
+                <div class="info-item d-flex">
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+                  <div>
+                    <h3>Call</h3>
+                    <p>+94 76 8236 929</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div class="info-item d-flex">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h3>Email</h3>
+                    <p>thanurs01@gmail.com</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+              </div>
             </div>
           </div>
-          <div class="col-md-6 d-none d-md-block">
-            <h3>Hire Me</h3>
-            <p align="justify">Looking for a professional web designer to enhance your online presence? I specialize in creating
-              captivating, user-friendly websites tailored to your needs. Let's work together to bring your vision to
-              life and boost your online impact. Contact me today to get started! <br><br> <a
-                href="mail: thanurs01@gmail.com">thanurs01@gmail.com</a></p>
-          </div>
         </div>
+      </section>
+      <!-- /Contact Section -->
+    </main>
 
-      </div>
-    </div>
+    <footer id="footer" class="footer position-relative light-background">
+      <div class="container"></div>
+    </footer>
 
-    <nav class="navbar navbar-light custom-navbar">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Portfolio.</a>
-        <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
-          <span></span>
-        </a>
-      </div>
-    </nav>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-    <!-- ======= Works Section ======= -->
-    <section class="section site-portfolio">
-      <div class="container">
-        <div class="row mb-5 align-items-center">
-          <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
-            <h2>Hey, I'm Thanusha Subasinghe</h2>
-            <p class="mb-0">Freelance &amp; Professional Web Designer</p>
-          </div>
-          <div class="col-md-12 col-lg-6 text-start text-lg-end" data-aos="fade-up" data-aos-delay="100">
-            <div id="filters" class="filters">
-              <a href="#" data-filter="*" class="active">All</a>
-              <a href="#" data-filter=".wordpress">WordPress</a>
-              <a href="#" data-filter=".custom">Custom</a>
-            </div>
-          </div>
-        </div>
-
-        <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
-          <!--    <div class="item wordpress col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://diffusermuscat.com/" class="item-wrap fancybox">
-              <div class="work-info">
-                                <h3>View</h3>
-                <span>WordPress</span>
-              </div>
-              <img class="img-fluid" src="assets/img/1.PNG">
-            </a>
-          </div> -->
-
-          <div class="item wordpress col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://rakiyapola.com/" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>View</h3>
-                <span>WordPress</span>
-              </div>
-              <img class="img-fluid" src="assets/img/2.PNG">
-            </a>
-          </div>
-
-          <div class="item wordpress col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://www.hospitalityessentials.co.uk/" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>View</h3>
-                <span>WordPress</span>
-              </div>
-              <img class="img-fluid" src="assets/img/3.PNG">
-            </a>
-          </div>
-
-          <div class="item wordpress col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://cheshiretechcorp.com/" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>View</h3>
-                <span>WordPress</span>
-              </div>
-              <img class="img-fluid" src="assets/img/4.PNG">
-            </a>
-          </div>
-
-          <div class="item wordpress col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://www.evasion7.com/" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>View</h3>
-                <span>WordPress</span>
-              </div>
-              <img class="img-fluid" src="assets/img/5.PNG">
-            </a>
-          </div>
-
-          <div class="item wordpress col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://stylishlooks.com.au/" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>View</h3>
-                <span>WordPress</span>
-              </div>
-              <img class="img-fluid" src="assets/img/6.PNG">
-            </a>
-          </div>
-
-          <div class="item custom col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://inspirationpainter.com.au/" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>View</h3>
-                <span>Custom</span>
-              </div>
-              <img class="img-fluid" src="assets/img/7.PNG">
-            </a>
-          </div>
-
-          <div class="item custom col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://rufusdownload.com/" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>View</h3>
-                <span>Custom</span>
-              </div>
-              <img class="img-fluid" src="assets/img/8.PNG">
-            </a>
-          </div>
-
-          <div class="item wordpress col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://vaaniyfood.com/" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>View</h3>
-                <span>WordPress</span>
-              </div>
-              <img class="img-fluid" src="assets/img/9.PNG">
-            </a>
-          </div>
-
-          <div class="item wordpress col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://pandiyacholar.com/" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>View</h3>
-                <span>WordPress</span>
-              </div>
-              <img class="img-fluid" src="assets/img/10.PNG">
-            </a>
-          </div>
-
-          <div class="item custom col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://adbandroid.com/" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>View</h3>
-                <span>Custom</span>
-              </div>
-              <img class="img-fluid" src="assets/img/11.PNG">
-            </a>
-          </div>
-
-          <div class="item custom col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="#" class="item-wrap fancybox">
-              <div class="work-info">
-                <span>Custom</span>
-              </div>
-              <img class="img-fluid" src="assets/img/12.PNG">
-            </a>
-          </div>
-
-          <div class="item custom col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://cedc-engineering.com/" class="item-wrap fancybox">
-              <div class="work-info">
-                <span>Custom</span>
-              </div>
-              <img class="img-fluid" src="assets/img/13.PNG">
-            </a>
-          </div>
-
-          <div class="item custom col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="#" class="item-wrap fancybox">
-              <div class="work-info">
-                <span>Custom</span>
-              </div>
-              <img class="img-fluid" src="assets/img/14.PNG">
-            </a>
-          </div>
-
-          <div class="item wordpress col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://www.onerelief.ca/" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>View</h3>
-                <span>WordPress</span>
-              </div>
-              <img class="img-fluid" src="assets/img/15.PNG">
-            </a>
-          </div>
-
-          <div class="item wordpress col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://ncr2003.es/" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>View</h3>
-                <span>WordPress</span>
-              </div>
-              <img class="img-fluid" src="assets/img/16.PNG">
-            </a>
-          </div>
-
-          <div class="item wordpress col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://cleentek.ca/" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>View</h3>
-                <span>WordPress</span>
-              </div>
-              <img class="img-fluid" src="assets/img/17.PNG">
-            </a>
-          </div>
-
-          <div class="item wordpress col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://workerprohrsolutions.com/" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>View</h3>
-                <span>WordPress</span>
-              </div>
-              <img class="img-fluid" src="assets/img/18.PNG">
-            </a>
-          </div>
-
-          <div class="item wordpress col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://www.windoware.ca/" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>View</h3>
-                <span>WordPress</span>
-              </div>
-              <img class="img-fluid" src="assets/img/19.PNG">
-            </a>
-          </div>
-
-          <div class="item wordpress col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://ivisions.ca/" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>View</h3>
-                <span>WordPress</span>
-              </div>
-              <img class="img-fluid" src="assets/img/20.PNG">
-            </a>
-          </div>
-
-          <div class="item custom col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://www.reibootdownload.com/" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>View</h3>
-                <span>Custom</span>
-              </div>
-              <img class="img-fluid" src="assets/img/21.PNG">
-            </a>
-          </div>
-
-          <div class="item custom col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="http://ultratecfitouts.com.au/" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>View</h3>
-                <span>Custom</span>
-              </div>
-              <img class="img-fluid" src="assets/img/22.PNG">
-            </a>
-          </div>
-
-          <div class="item custom col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://inspirationelectrician.com.au/" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>View</h3>
-                <span>Custom</span>
-              </div>
-              <img class="img-fluid" src="assets/img/23.PNG">
-            </a>
-          </div>
-
-          <div class="item custom col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="#" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>View</h3>
-                <span>Custom</span>
-              </div>
-              <img class="img-fluid" src="assets/img/24.PNG">
-            </a>
-          </div>
-
-        </div>
-      </div>
-    </section><!-- End  Works Section -->
-
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <p class="mb-1">&copy; Copyright Portfolio. All Rights Reserved</p>
-        </div>
-        <div class="col-sm-6 social text-md-end">
-          <a href="#"><span class="bi bi-twitter"></span></a>
-          <a href="#"><span class="bi bi-facebook"></span></a>
-          <a href="#"><span class="bi bi-instagram"></span></a>
-          <a href="#"><span class="bi bi-linkedin"></span></a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
